@@ -60,9 +60,12 @@ class Interface:
 
                 y = input("Digite o segundo número:")
                 y = int(y)
-
-                divisao = x / y
-                print("Divisão:", divisao)
+                if (y <= 0):
+                    print("Não se divide por zero.")
+                    
+                else:
+                    divisao = x / y
+                    print("Divisão:", divisao)
 
             case 5:
                 x = input("Digite o primeiro valor: ")
