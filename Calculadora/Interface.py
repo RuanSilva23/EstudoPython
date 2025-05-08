@@ -1,8 +1,5 @@
-from xmlrpc.client import boolean
-
-
 class Interface:
-    continuar = boolean(True)
+    continuar = True
     while continuar:
         print("------Menu-------")
         print("1 - Soma")
@@ -62,7 +59,7 @@ class Interface:
                 y = int(y)
                 if (y <= 0):
                     print("Não se divide por zero.")
-                    
+
                 else:
                     divisao = x / y
                     print("Divisão:", divisao)
